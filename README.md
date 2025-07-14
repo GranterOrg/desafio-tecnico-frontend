@@ -28,8 +28,8 @@ pelos campos `str_automation_name`, `str_step_name` e `str_step_label`.
 
 Além disso o design define duas abas, uma de tarefas `Abertas` e outra de tarefas `Finalizadas`, em cada uma dessas abas
 a listagem deve mostrar Tarefas diferentes:
- - Quando o `str_step_type` for igual a `pending` ou for igual a `waiting` a tarefa deve aparecer na aba de `Abertas`
- - E, quando o `str_step_type` for igual a `finished` ou for igual a `canceled` a tarefa deve aparecer na aba de `Finalizadas`
+ - Quando o `str_task_status` for igual a `pending` ou for igual a `waiting` a tarefa deve aparecer na aba de `Abertas`
+ - E, quando o `str_task_status` for igual a `finished` ou for igual a `canceled` a tarefa deve aparecer na aba de `Finalizadas`
 
 Os ícones presentes na tela e componentes podem ser carregados via UnoCSS, como demonstrado na view de exemplo `MainView.vue`.
 
