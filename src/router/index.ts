@@ -1,13 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MainView from "@/views/MainView.vue";
+import TasksView from "@/views/TasksView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "main-view",
-      component: MainView,
+      redirect: "/flow/tasks",
+    },
+    {
+      path: "/flow/tasks",
+      name: "tasks",
+      component: TasksView,
     },
   ],
 });
