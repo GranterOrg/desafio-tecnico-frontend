@@ -31,8 +31,9 @@ onBeforeMount(async () => {
       <div v-if="mockServerResp">
         <p>
           <span color-teal font-bold> Sucesso! </span>
-          O Servidor mock está rodando corretamente no caminho 
-          <b>{{ API_URL }}</b>! 🎉
+          O Servidor mock está rodando corretamente no caminho
+          <b>{{ API_URL }}</b
+          >! 🎉
         </p>
       </div>
       <div v-else-if="mockServerError">
@@ -42,7 +43,7 @@ onBeforeMount(async () => {
           verifique se você está rodou corretamente o comando
           <code>pnpm mock-server</code>
         </p>
-        <p> Erro retornado: </p>
+        <p>Erro retornado:</p>
         <pre>{{ mockServerError }}</pre>
       </div>
       <div v-else>
